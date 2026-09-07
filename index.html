@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <!-- Indica que el documento utiliza HTML5 -->
 
@@ -13,7 +13,15 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Permite que la página se adapte correctamente a diferentes tamaños de pantalla -->
+        
+        <link rel="preload" href="css/normalize.css" as="style"/>
+        <link rel="stylesheet" href="css/normalize.css"/>
 
+        <link rel="preload" href="css/styles.css" as="style"/>
+        <link rel="stylesheet" href="css/styles.css"/>
+
+        
+        
         <title>Developer página</title>
         <!-- Título que aparece en la pestaña del navegador -->
     </head>
@@ -22,7 +30,7 @@
         <!-- Contiene todo el contenido visible de la página -->
 
         <header>
-            <h1>Scarlet Ruelas Developer</h1>
+            <h1 class="my-title">Scarlet Ruelas Cardeña <span>Developer</span></h1>
         </header>
 
         <nav>
@@ -40,7 +48,6 @@
         <main>
             <h2>Mis servicios</h2>
 
-            <!-- Servicio de diseño web -->
             <section>
                 <h3>Diseño web</h3>
 
@@ -103,7 +110,6 @@
                 </p>
             </section>
 
-            <!-- Servicio de soluciones con IA -->
             <section>
                 <h3>Soluciones con IA</h3>
 
@@ -136,17 +142,44 @@
             </section>
         </main>
 
-        <!-- Sección de contacto -->
         <section>
             <h2>Contacto</h2>
+            <form>
+                <fieldset>
+                    <legend>Llena tus datos de contactos</legend>
+                    <div>
+                        <label>Nombre(s)</label>
+                        <input type="text" placeholder="nombre completo" />
+                    </div>
+
+                    <div>
+                        <label>Teléfono</label>
+                        <input type="tel" placeholder="Tu teléfono" />
+                    </div>
+
+                    <div>
+                        <label>Email</label>
+                        <input type="email" placeholder="Tu correo electrónico" />
+                    </div>
+
+                    <div>
+                        <label>Mensaje</label>
+                        <textarea></textarea>
+                    </div>
+
+                    <div>
+                        <input type="submit" value="Enviar" />
+                    </div>
+                </fieldset>
+            </form>
         </section>
 
         <footer>
             <p>
-                Todos los derechos reservados &copy; 2026 Scarlet Ruelas
+                Todos los derechos reservados &copy; 2026 Scarlet Ruelas Cardeña
             </p>
         </footer>
 
     </body>
 </html>
-```
+
