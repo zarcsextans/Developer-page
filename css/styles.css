@@ -1,3 +1,11 @@
+:root {
+    --blanco: #fff;
+    --oscuro: #212121;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+}
+
 /* Truco para uniformidad de texto entre navegadores */
 html {
     font-size: 62.5%;
@@ -15,3 +23,35 @@ body {
     font-size: 2rem;
 }
 
+.navegacion-principal {
+    background-color: var(--secundario);
+    /* Margin es por fuera y padding (relleno) es por dentro */
+    display: flex; /* Flexbox es para alinear elementos de manera horizontal o vertical */
+justify-content: space-between; /* Espacio entre los elementos */
+    font-weight: bold; /* En negritas*/
+    font-size: 2rem;
+}
+
+.navegacion-principal a:hover {
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
+.navegacion-principal a{
+    color: var(--blanco);
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    padding: 1rem;
+}
+
+.contenedor {
+    width: 120rem;
+    margin: 0 auto; /* Centra el contenedor */
+    /* margin-top: 0;
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto; */
+}
+
+.nav-bg {
+    background-color: var(--secundario);
+}
